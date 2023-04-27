@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     transpile: ['vuetify'],
   },
 
-  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt'],
+  modules: ['@nuxtjs/tailwindcss', '@pinia/nuxt', '@nuxtjs/apollo'],
 
   app: {
     baseURL: '/bizmatescoaching/',
@@ -41,11 +41,11 @@ export default defineNuxtConfig({
     },
   },
 
-  // apollo: {
-  //   autoImports: true,
-  //   clients: {
-  //     default: './apollo/client-configs/default.ts',
-  //     mbti: './apollo/client-configs/mbti.ts',
-  //   },
-  // },
+  apollo: {
+    autoImports: true,
+    clients: {
+      default: './apollo/client-configs/default.ts',
+      mbti: './apollo/client-configs/mbti.ts',
+    },
+  },
 });
